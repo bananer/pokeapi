@@ -9,20 +9,20 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Paul Hallett', 'paulandrewhallett@gmail.com'),
+    ('Philip Frank', 'mail@philipfrank.de'),
 )
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 MANAGERS = ADMINS
 
-BASE_URL = 'http://pokeapi.co'
+BASE_URL = 'http://pokeapi.philipfrank.de'
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['.pokeapi.co', 'localhost']
+ALLOWED_HOSTS = ['.pokeapi.philipfrank.de', 'localhost']
 
-TIME_ZONE = 'Europe/London'
+TIME_ZONE = 'Europe/Berlin'
 
 LANGUAGE_CODE = 'en-gb'
 
