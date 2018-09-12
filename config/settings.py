@@ -51,8 +51,8 @@ STATIC_ROOT = PROJECT_ROOT.child('assets')
 STATIC_URL = '/assets/'
 
 STATICFILES_DIRS = (
-    # '/pokemon/assets/',
-    # 'pokemon_v2/assets/',
+    '/pokemon/assets/',
+    'pokemon_v2/assets/',
 )
 
 STATICFILES_FINDERS = (
@@ -136,7 +136,7 @@ INSTALLED_APPS = (
 ) + CUSTOM_APPS
 
 
-API_LIMIT_PER_PAGE = 1
+API_LIMIT_PER_PAGE = 0
 
 TASTYPIE_DEFAULT_FORMATS = ['json']
 
@@ -162,10 +162,10 @@ REST_FRAMEWORK = {
 
     'PAGINATE_BY': 20,
     'DEFAULT_THROTTLE_CLASSES': (
-        'rest_framework.throttling.AnonRateThrottle',
+        #'rest_framework.throttling.AnonRateThrottle',
     ),
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '1000/hour'
+        #'anon': '1000/hour'
     }
 }
 
